@@ -1,0 +1,12 @@
+<launch>
+<group>
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
+    <arg name="publish_tf" value="true"/>
+  </include>
+
+  <node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" args="image:=/kinect2/hd/image_depth_rect" respawn="true"/>
+
+  <include file="$(find rtabmap_ros)/launch/rgbd_mapping_kinect2.launch"/>
+</group>
+</launch>

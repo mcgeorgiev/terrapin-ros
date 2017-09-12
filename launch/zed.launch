@@ -1,0 +1,25 @@
+<launch>
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+
+  <node pkg="zed_wrapper" type="zed_wrapper_node" name="zed_camera"
+        args="_confidence:=100" />
+
+
+  <node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan"
+        args="image:=/depth/depth_registered" respawn="true"/>
+
+  <arg name="pi/2" value="1.5707963267948966"/>
+  <arg name="optical_rotate" value="0 0 0 -$(arg pi/2) 0 -$(arg pi/2)" />
+  <node pkg="tf" type="static_transform_publisher" name="zed_camera_link"
+        args="$(arg optical_rotate) camera_link zed_initial_frame 100" />
+  <node pkg="tf" type="static_transform_publisher" name="zed_disparity"
+        args="0 0 0 0 0 0 zed_current_frame ZED_left_camera 100" />
+
+  <include file="$(find rtabmap_ros)/launch/rtabmap.launch">
+    <arg name="rtabmap_args" value="--delete_db_on_start"/>
+    <arg name="rgb_topic" value="/rgb/image_rect_color"/>
+    <arg name="camera_info_topic" value="/rgb/camera_info"/>
+    <arg name="depth_topic" value="/depth/depth_registered"/>
+    <arg name="approx_sync" value="false"/>
+  </include>
+</launch>
