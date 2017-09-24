@@ -52,7 +52,7 @@ cd ..
 catkin_make
 ```
 
-6) (OPTIONAL) Tensorflow will need to be trained and placed in `terrapin-ros/tensorflow/tf_files` following instructions found here:
+6) (OPTIONAL) Tensorflow will need to be trained and placed in `~/terrapin-ros/src/tensorflow/tf_files` following instructions found here:
 
     https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
 
