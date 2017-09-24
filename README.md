@@ -88,7 +88,12 @@ This will launch the `turtlebot_bringup`, `rtabmap_ros`, `rtabmap visualisation`
 
 2)	Run the object detection programme:
 
-`roslaunch terrapin-ros stream.py`
+```
+roslaunch terrapin-ros stream.py kinect2
+OR
+roslaunch terrapin-ros stream.py zed
+```
+
 
 3)	Run RViz:
 
