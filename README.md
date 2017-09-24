@@ -106,4 +106,9 @@ Replace step 4) with: `roslaunch turtlebot-telep keyboard.launch `
 - A calibration tool can be ran which will create a text file with calibration details. This will mask out the selected area. (E.g. flooring)
 Run: `python calibration.py` and point at an area and press ‘q’ or ‘p’.
 
+<img src="/readme_images/ex3pc.png" alt="" style="width: 200px;"/>
+
+![Alt text](/readme_images/ex1pc.png)
+![Alt text](/readme_images/hsv.png)
+
 
