@@ -34,7 +34,7 @@ diagnostic-updater==1.9.2
 dill==0.2.7.1
 docutils==0.12
 dynamic-reconfigure==1.5.48
-ecdsa==0.13
+ecdsa==0.13.3
 empy==3.3.2
 enum34==1.1.6
 funcsigs==1.0.2
