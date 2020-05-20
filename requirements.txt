@@ -55,7 +55,7 @@ google-gax==0.15.14
 googleapis-common-protos==1.5.2
 grpcio==1.4.0
 html5lib==0.9999999
-httplib2==0.9.1
+httplib2==0.18.0
 idna==2.6
 image-geometry==1.12.4
 interactive-markers==1.11.3
