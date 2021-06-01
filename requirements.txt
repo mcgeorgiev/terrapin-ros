@@ -219,7 +219,7 @@ Twisted==16.0.0
 txaio==1.0.0
 unique-id==1.0.5
 unity-lens-photos==1.0
-urllib3==1.22
+urllib3==1.26.5
 vcstools==0.1.39
 wadllib==1.3.2
 Werkzeug==0.12.2
