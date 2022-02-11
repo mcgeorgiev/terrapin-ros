@@ -86,7 +86,7 @@ pbr==3.1.1
 Pillow==3.1.2
 pluginlib==1.10.5
 ply==3.8
-protobuf==3.4.0
+protobuf==3.15.0
 psutil==3.4.2
 pyasn1==0.3.3
 pyasn1-modules==0.1.1
