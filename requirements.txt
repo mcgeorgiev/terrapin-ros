@@ -54,7 +54,7 @@ google-cloud-vision==0.27.0
 google-gax==0.15.14
 googleapis-common-protos==1.5.2
 grpcio==1.4.0
-html5lib==0.9999999
+html5lib==0.99999999
 httplib2==0.9.1
 idna==2.6
 image-geometry==1.12.4
