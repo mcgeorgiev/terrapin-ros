@@ -15,7 +15,7 @@ capabilities==0.2.0
 catkin==0.7.6
 catkin-pkg==0.3.5
 catkin-pkg-modules==0.3.5
-certifi==2017.7.27.1
+certifi==2022.12.7
 chardet==3.0.4
 configobj==5.0.6
 crcmod==1.7
